@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: jboss
+  name: jboss
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jboss
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: jboss
+    spec:
+      containers:
+      - image: 234300/jbossmanu
